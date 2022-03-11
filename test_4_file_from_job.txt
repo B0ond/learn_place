@@ -1,0 +1,2 @@
+This file i send from my compyter job.
+Firs i clone git repositories and push it to my remote repositories
