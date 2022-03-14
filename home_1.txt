@@ -1,0 +1,36 @@
+my folder is /c/Stady/Homework/home_1.txt
+
+1 Посмотреть где я: pwd
+
+2 Создать папку: mkdir folder
+
+3 Зайти в папку: cd folder
+
+4 Создать 3 папки: mkdir folder_1 folder_2 folder_3
+
+5 зайти влюбую папку: cd /название папки
+
+6 Создать 5 файлов 3 txt, 2 json: touch t_1.txt t_2.txt t_3.txt j_1.json j_2.json
+
+7 Создать 3 папки: mkdir folder_1.1 folder_2.1 folder_3.1
+
+8 Вывести содержимое папки: ls -la расширенный ls обычный
+
+9 Открыть любой txt файл: nnano text.txt, vim text.txt, cat text.txt(просто просмотр)
+
+10 Написать что нибудь в любой екст: i
+
+11 Соранить и выйти: ":qw" - vim, "ctrl + x" then press "y" nano
+
+12 Выйти из папки на урвоень выше: cd ..
+
+13 Переиестить 2 файла: mv Homework/t_1.txt /c/stady/t_1.txt
+			mv Homework/t_2.txt /c/stady/t_2.txt
+
+14 скопировать любые 2 файла в другую папку: cp t_1.txt t_2.txt Homework/
+
+15 найти фал по имени:  find -name "filename.txt"  **we know name and extension
+			file -name "filename.*"    **we know only name
+			file -name "*.txt"         **we know only extansion
+
+16 просмотреть содержимое в реальном времени: cat t_1.txt
