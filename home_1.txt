@@ -20,7 +20,7 @@ my folder is /c/Stady/Homework/home_1.txt
 
 10 Написать что нибудь в любой екст: i
 
-11 Соранить и выйти: ":qw" - vim, "ctrl + x" then press "y" nano
+11 Соранить и выйти: vim - ":qw",nano - "ctrl + x" then press "y"
 
 12 Выйти из папки на урвоень выше: cd ..
 
@@ -34,3 +34,5 @@ my folder is /c/Stady/Homework/home_1.txt
 			file -name "*.txt"         **we know only extansion
 
 16 просмотреть содержимое в реальном времени: cat t_1.txt
+
+17 
