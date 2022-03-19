@@ -1,6 +1,6 @@
 #!/bin/bash
 #Homework_1
-# "i created a zero step - make directory 'folder' "
+# "i create a zero step - make directory 'folder' "
 mkdir folder
 # "step 3"
 cd folder
