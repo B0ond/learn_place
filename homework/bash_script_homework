@@ -1,0 +1,18 @@
+#!/bin/bash
+#Homework_1
+# "i created a zero step - make directory 'folder' "
+mkdir folder
+# "step 3"
+cd folder
+# "step 4"
+mkdir bash_folder_1 bash_folder_2 bash_folder_3
+# "step 5"
+cd bash_folder_1
+# "step 6"
+touch bash_file_1.txt bash_file_2.txt bash_file_3.txt bash_file_4.json bash_file_5.json
+# "step 7"
+mkdir bash_folder_2_1 bash_folder_2_2 bash_folder_2_3
+# "step 8"
+ls
+# "step 13"
+mv bash_file_1.txt bash_file_4.json bash_folder_2_1/
