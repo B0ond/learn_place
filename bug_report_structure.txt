@@ -1,0 +1,11 @@
+id
+		title
+		attachment прикрепленные фото видео бага
+		описание Descriptions
+		окружение environment
+		steps
+		фактический ожидаемый
+		siverity priority
+		workaround обходной путь
+		кто создал баг репорт и кто будет фиксить
+
