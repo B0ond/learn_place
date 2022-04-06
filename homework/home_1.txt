@@ -16,11 +16,11 @@ my folder is /c/Stady/Homework/home_1.txt
 
 8 Вывести содержимое папки: ls -la расширенный ls обычный
 
-9 Открыть любой txt файл: nnano text.txt, vim text.txt, cat text.txt(просто просмотр)
+9 Открыть любой txt файл: vim text.txt
 
-10 Написать что нибудь в любой екст: i
+10 Написать что нибудь в любой екст: default text
 
-11 Соранить и выйти: vim - ":qw",nano - "ctrl + x" then press "y"
+11 Соранить и выйти: vim - ":qw"
 
 12 Выйти из папки на урвоень выше: cd ..
 
@@ -33,7 +33,7 @@ my folder is /c/Stady/Homework/home_1.txt
 			file -name "filename.*"    **we know only name
 			file -name "*.txt"         **we know only extansion
 
-16 просмотреть содержимое в реальном времени: cat t_1.txt
+16 просмотреть содержимое в реальном времени: tail -f t_1.txt
 
 17) вывести несколько первых строк из текстового файла: head -2 test_1.txt (выводит первые 2 строки)
 
@@ -53,4 +53,4 @@ q, Q, :q, :Q, ZZ — выход.
 20) вывести дату и время: date
 
 Задание*
-1) curl http://162.55.220.72:5005/object_info_3?name=Vadim&age=32&salary=1000
+1) curl 'http://162.55.220.72:5005/object_info_3?name=Amiram&age=27&'
