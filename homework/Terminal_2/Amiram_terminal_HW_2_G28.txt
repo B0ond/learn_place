@@ -102,7 +102,7 @@ $ find . -name tf_4.txt
 $ :> inner_dir_1/tf_4.txt
 
  21. Найти путь к файлам у которых есть  “tf” в названии.
-$ find inner_dir_1 "tf*.txt"
+$ find -name "tf*.txt"
 
  22. Найти путь к файлам у которых есть  “tf” в названии и буквы в любом регистре.
  find -iname "tf*.txt"
@@ -132,10 +132,10 @@ $ find inner_dir_1 "tf*.txt"
  $ grep -l second *
  
  31. Найти все строки во всех файлах где нет комбинации “second”
- $ grep -v second *
+ $ grep -v -r second
  
  32. Найти только название и путь к файлам где нет комбинации “second”
- $ grep -v -i second *
+ $ grep -v -i -r second
  
  33. Вывести в терминал 4 последних строк любого текстового файла
  $ tail -4 inner_dir_1/tF_5.txt
