@@ -161,7 +161,7 @@ $ find -name "tf*.txt"
  $ grep -r sec | cat >> take_text.txt
  
  39. Команда в одну строку. Удалить текстовые файлы у которых в содержимом есть слово “sec”
- $ grep -r -l sec | xargs rme
+ $ grep -r -l sec | xargs rm
  
  40. Просто вывести в терминал строку “Good job!!”
 $ echo "Good Job!"
