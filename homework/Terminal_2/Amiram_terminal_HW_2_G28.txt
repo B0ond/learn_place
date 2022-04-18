@@ -18,7 +18,7 @@ $ cat > tf_2.txt
  the first 1
  the second 2
  the third 3
-exit - ctrl + c
+exit - ctrl + d
 
  7. Зайти в папку inner_dir_1
 cd inner_dir_1
@@ -41,7 +41,7 @@ cat >> tf_3.txt
 the sec 2
 
  11. Через cat добавить в текстовый файл tf_2.txt строку “the sec 3”
-cat >> inner_dir_1/tf_2.txt
+cat >> ../tf_2.txt
 the sec 3
 
  12. Через cat добавить в текстовый файл tf_3.txt строку “the SeCoNd 2”
@@ -49,7 +49,7 @@ cat >> tf_3.txt
 the SeCoNd 2
 
  13. Через cat добавить в текстовый файл tf_2.txt строку “the seConD 2”
-cat >> inner_dir_1/tf_2.txt
+cat >> ../tf_2.txt
 the seConD 2
 
  14. Сделать текстовый файл tf_4.txt в котором будет 15 строк.
@@ -87,7 +87,7 @@ str12
 str13
 
  16. Вывести список всех файлов в папке.
-ls
+ls -la | grep -v /
 
  17. Выйти из папки inner_dir_1
 cd ..
@@ -97,6 +97,7 @@ $ cat inner_dir_1/tf_3.txt
 
  19. Найти путь к файлу tf_4.txt
 $ find . -name tf_4.txt
+$ realpath tf_4.txt
 
  20. Отчистить файл tf_4.txt от содержимого без удаления самого файла.
 $ :> inner_dir_1/tf_4.txt
@@ -126,7 +127,7 @@ $ find -name "*tf*.*"
  $ grep -i second *
  
  29. Найти строки в файлах где есть комбинация букв “second” во всех папках ниже уровнем
- $ grep -r second
+ $ grep -r second ./*/
  
  30. Найти только путь и название файла в строках которых есть комбинация букв “second” в текущей папке
  $ grep -l second *
@@ -144,7 +145,7 @@ $ find -name "*tf*.*"
  $ head -4 inner_dir_1/tF_5.txt
  
  35. Команда в одну строку. Создать папку и создать текстовый файл с содержиммым.
- $ mkdir folder && cat > folder/text.txt
+ $  mkdir folder && echo "simple text" > folder/text_file.txt
 
  {Символы && и || означают не что иное, как логическое И и ИЛИ.
 && это означает, что команда mycommand2 будет выполнена только в том случае, если команда mycommand1 была выполнена успешно
