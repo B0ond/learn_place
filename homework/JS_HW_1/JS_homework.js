@@ -41,7 +41,7 @@ item_6 = 15;
 item_6_type = typeof(item_6)
 
 //ex_21_hm_js_1
-console.log("item_6 == " + item_6 + ", " + "item_6_type == " + item_6_type)
+console.log("——", "item_6 == " + item_6 + ",", "item_6_type == " + item_6_type, "——")
 
 //ex_22_hm_js_1
 item_7 = String(item_6);
@@ -50,16 +50,16 @@ item_7 = String(item_6);
 let item_7_type = typeof(item_7);
 
 //ex_25_hm_js_1
-console.log("item_7 == " + item_7 + ", " + "item_7_type == " + item_7_type);
+console.log("——", "item_7 == " + item_7 + ",", "item_7_type == " + item_7_type, "——");
 
 //ex_26,27,28_hm_js_1
-let age_1 = 27;
+let age_1 = 11;
 let age_2 = 18;
 let age_3 = 60;
 
 //ex_29,30,31,32,33_hm_js_1
 if (age_1 < age_2) {
-    console.log("You don’t have access cause your age is " + age_1 + " It’s less then ")
+    console.log("You don’t have access cause your age is", age_1, "It’s less then ")
 } else if (age_1 >= age_2 && age_1 < age_3) {
     console.log("Welcome !")
 } else if (age_1 > age_3) {
