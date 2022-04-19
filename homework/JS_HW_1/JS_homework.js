@@ -41,7 +41,7 @@ item_6 = 15;
 item_6_type = typeof(item_6)
 
 //ex_21_hm_js_1
-console.log("——", "item_6 == " + item_6 + ",", "item_6_type == " + item_6_type, "——")
+console.log("item_6 == " + item_6 + ",", "item_6_type == " + item_6_type)
 
 //ex_22_hm_js_1
 item_7 = String(item_6);
@@ -50,7 +50,7 @@ item_7 = String(item_6);
 let item_7_type = typeof(item_7);
 
 //ex_25_hm_js_1
-console.log("——", "item_7 == " + item_7 + ",", "item_7_type == " + item_7_type, "——");
+console.log("item_7 == " + item_7 + ",", "item_7_type == " + item_7_type);
 
 //ex_26,27,28_hm_js_1
 let age_1 = 11;
