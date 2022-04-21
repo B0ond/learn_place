@@ -53,9 +53,9 @@ let item_7_type = typeof(item_7);
 console.log("item_7 == " + item_7 + ",", "item_7_type == " + item_7_type);
 
 //ex_26,27,28_hm_js_1
-let age_1 = 11;
-let age_2 = 18;
-let age_3 = 60;
+let age_1 = 20;
+const age_2 = 18;
+const age_3 = 60;
 
 //ex_29,30,31,32,33_hm_js_1
 if (age_1 < age_2) {
