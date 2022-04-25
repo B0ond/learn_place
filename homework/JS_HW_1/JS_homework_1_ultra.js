@@ -54,24 +54,24 @@
 
 
 
-const checkAge = function (age_1) {
-    if (typeof(age_1) == Number) {
-        const age_2 = 18;
-        const age_3 = 60;
-            if (age_1 < age_2) {
-            console.log("You don’t have access cause your age is", age_1, "It’s less then ")
-        } else if (age_1 >= age_2 && age_1 < age_3) {
+const checkAge = function (age) {
+    const age_min = 18;
+    const age_max = 60;
+    if (typeof (age) == 'number') {  
+        if (age < age_min) {
+            console.log("You don’t have access cause your age is", age, "It’s less then ")
+        } else if (age >= age_min && age < age_max) {
             console.log("Welcome !")
-        } else if (age_1 > age_3) {
+        } else if (age > age_max) {
             console.log("Keep calm and look Culture channe !")
         } else {
             console.log("Technical work")
         }
     }
     else {
-        console.log(age_1, "is not a number")
+        console.log(age, "is not a number")
     }
-        
+
 }
 
-checkAge()
+checkAge('asf')
