@@ -23,20 +23,6 @@
 
 
 
-// const freindNames = {
-//   mans: ["Igor", "Alex", "Ruslan"],
-//   girls: ["Regina", "Sasha"],
-//   ages: {
-//     manAge: { virginOff: 18 },
-//     girlsAge: [25, 26],
-//   },
-// };
-// const freindNames2 = { ...freindNames };
-// freindNames2.girlFriends = ["Sasha", "Prati"]
-// freindNames2.ages = { manAge: [24, 33, 25], girlsAge: [25, 26] };
-// // console.log(freindNames)
-// console.log(freindNames);
-// console.log(freindNames2);
 
 
 // function myFun(a, b) {
