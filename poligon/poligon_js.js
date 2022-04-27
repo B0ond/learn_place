@@ -63,3 +63,4 @@ let obj1 = {
 for (let item in names){
     console.log('name= ', names[item], item)
 }
+

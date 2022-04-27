@@ -1,11 +1,30 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Title</title>
+    <style type="text/css">
+        input[type="text"] {
+            
+            border: 1px solid #7cca15;
+        }
+        input {
+            margin: 3px 0px 3px 15px;
+        }
+
+        
+    </style>
 </head>
 <body>
-<script src="js_hw_2.js"></script>
+	<div class="modal">
+    <form name="form" action="6.php" method="POST">
+		<div class="form__group">
+        	<input type="text" name="name" value="My name" />
+		</div>
+        	<input type="text" name="email" value="email@mail.com" /><br>
+        	<input type="radio" name="sex" checked="checked" value="male" />male<br>
+        	<input type="radio" name="sex" value="female" />female<br>
+        	<input type="submit" value="Ok" />
+    </form>
+</div>
+<script type="js_hw_2.js"></script>
 </body>
 </html>
-	
