@@ -47,20 +47,21 @@
 // }
 
 
-let countStop = 10
-let count = 0
-let names = ['Kate', 'Alex', 'Ivan', 'Ignat', 'Andrey', 'Vika']
+// let countStop = 10
+// let count = 0
+// let names = ['Kate', 'Alex', 'Ivan', 'Ignat', 'Andrey', 'Vika']
 
-let obj1 = {
-    'n1': '1111',
-    'n1': '2222',
-    'n1': '33333',
-    'n1': '4444',
-    'n1': '5555',
-    'n1': '6666'
-}
+// let obj1 = {
+//     'n1': '1111',
+//     'n1': '2222',
+//     'n1': '33333',
+//     'n1': '4444',
+//     'n1': '5555',
+//     'n1': '6666'
+// }
 
-for (let item in names){
-    console.log('name= ', names[item], item)
-}
+// for (let item in names){
+//     console.log('name= ', names[item], item)
+// }
+
 
