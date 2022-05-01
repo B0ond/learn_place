@@ -10,11 +10,8 @@
 // let func2 = (fl11 > 10) ?
 //     (fl1, fl2) => {console.log('Hellow func2 1', fl1 + fl2)}:
 //     (fl1, fl2) => {console.log('Hellow func2 2', fl1 - fl2)};
-    
 
 // func2(fl11, fl22)
-
-
 
 // function Yolochka(){}
 
@@ -36,8 +33,6 @@
 // forest.method2(100, 200)
 // forest.method1()
 
-
-
 // let count = 0
 // let countStop = 10
 
@@ -45,7 +40,6 @@
 //     console.log('Hellow!!! --', count)
 //     count ++
 // }
-
 
 // let countStop = 10
 // let count = 0
@@ -64,4 +58,25 @@
 //     console.log('name= ', names[item], item)
 // }
 
+function login(check) {
+  // let counter
+  if (typeof check == "string") {
+    if (check.length <= 4) {
+      console.log("Short name. Enter from 5 characters");
+    } else if (check.length >= 65) {
+      console.log("Too long name");
+    } else if (check.match(/[^a-zа-яё]/)) {
+      console.log("Enter letters");
+    } else if (check.match(/[^0-9]/)) {
+      console.log("Enter numbers");
+    } else if (check.toUpperCase()) {
+      console.log("Enter an uppercase letter");
+    } else {
+      console.log("Thancks, it's ok");
+    }
+  } else {
+    console.log("Enter string");
+  }
+}
 
+login("ghbdjjj1G");

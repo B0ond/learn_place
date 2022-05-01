@@ -8,14 +8,7 @@
 // // newMyCars.countru[2] = 'china'
 // // console.log(newMyCars.countru[2])
 
-
-
 // a()
-
-
-
-
-
 
 // function myFun(a, b) {
 //     let c
@@ -26,16 +19,12 @@
 
 // let a = myFun(10, 3)
 
-
 // console.log(a)
-
-
-
 
 // const checkAge = function (age) {
 //     const age_min = 18;
 //     const age_max = 60;
-//     if (typeof (age) == 'number' || typeof (age) == 'string') {  
+//     if (typeof (age) == 'number' || typeof (age) == 'string') {
 //         if (age < age_min) {
 //             console.log("You don’t have access cause your age is", age, "It’s less then ")
 //         } else if (age >= age_min && age < age_max) {
@@ -54,40 +43,31 @@
 
 // checkAge('12')
 
-
-
-
 const checkAge = function (age) {
-    const age_min = 18;
-    const age_max = 60;
-    age = parseInt(age);
-    // console.log(typeof(age), age)
-    if (typeof (age) == 'number' || typeof (age) == 'string') {
-        if (isNaN(age)) {
-            alert(" is not a number")
-        }
-        else if (age < age_min) {
-            alert("You don’t have access cause your age is " + age + " It’s less then ")
-        }
-         else if (age >= age_min && age < age_max) {
-            alert("Welcome !")
-        } else if (age > age_max) {
-            alert("Keep calm and look Culture channe !")
-        } else {
-            alert("Technical work")
-        }
+  const age_min = 18;
+  const age_max = 60;
+  age = parseInt(age);
+  // console.log(typeof(age), age)
+  if (typeof age == "number" || typeof age == "string") {
+    if (isNaN(age)) {
+      alert(" is not a number");
+    } else if (age < age_min) {
+      alert(
+        "You don’t have access cause your age is " + age + " It’s less then "
+      );
+    } else if (age >= age_min && age < age_max) {
+      alert("Welcome !");
+    } else if (age > age_max) {
+      alert("Keep calm and look Culture channe !");
+    } else {
+      alert("Technical work");
     }
-    
-    else {
-        alert(age + " is not a number")
-    }
+  } else {
+    alert(age + " is not a number");
+  }
+};
 
-}
-
-checkAge(prompt('Enter your age please:'), '')
-
-
-
+checkAge(prompt("Enter your age please:"), "");
 
 // const checkAge = function (age) {
 //     const age_min = 18;
@@ -109,7 +89,7 @@ checkAge(prompt('Enter your age please:'), '')
 //             console.log("Technical work")
 //         }
 //     }
-    
+
 //     else {
 //         console.log(age, "is not a number")
 //     }
