@@ -1,15 +1,3 @@
-// const validForm = function (mail) {
-//   if (typeof mail == "string") {
-//     if (check.length <= 4) {
-//       console.log("Eror, need more letters");
-//     }
-//     console.log("Validate complite");
-//   } else {
-//     console.log("eror");
-//   }
-// };
-// validForm("212dg12");
-
 function login(check) {
   // let counter
   if (typeof check == "string") {
@@ -34,3 +22,28 @@ function login(check) {
 }
 
 login("");
+
+// function login(check) {
+//   // let counter
+//   if (typeof check == "string") {
+//     if (check.length <= 4) {
+//       alert("Short name. Enter from 5 characters");
+//     } else if (check.length >= 65) {
+//       alert("Too long name");
+//     } else if (!check.match(/[a-zа-яё]/)) {
+//       alert("Enter letters");
+//     } else if (!check.match(/[A-ZА-ЯЁ]/)) {
+//       alert("Enter Bigletters");
+//     } else if (!check.match(/[0-9]/)) {
+//       alert("Enter numbers");
+//     } else if (!check.match(/[@]/)) {
+//       alert("Enter @");
+//     } else {
+//       alert("Thank's, it's ok");
+//     }
+//   } else {
+//     alert("Enter string");
+//   }
+// }
+
+// login(prompt("Chek me", ""));
