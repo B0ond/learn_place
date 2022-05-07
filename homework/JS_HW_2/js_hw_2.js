@@ -21,7 +21,7 @@ function login(check) {
   }
 }
 
-login("345645@hJ");
+login("345645@аа");
 
 // function login(check) {
 //   // let counter
