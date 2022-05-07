@@ -22,7 +22,7 @@
 
 // login("34dDs@");
 
-Through browser
+// Through browser
 function login(check) {
   if (typeof check == "string") {
     if (check.length <= 4) {
