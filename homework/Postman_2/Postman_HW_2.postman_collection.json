@@ -29,7 +29,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://162.55.220.72:5005/first",
+					"raw": "http://162.55.220.72:5007/first",
 					"protocol": "http",
 					"host": [
 						"162",
@@ -37,7 +37,7 @@
 						"220",
 						"72"
 					],
-					"port": "5005",
+					"port": "5007",
 					"path": [
 						"first"
 					]
@@ -53,10 +53,10 @@
 					"script": {
 						"exec": [
 							"// variables\r",
-							"var reqData = request.data;\r",
-							"var jsonData = pm.response.json();\r",
-							"let req_age = reqData.age;\r",
-							"let req_name = reqData.name;\r",
+							"let reqData = request.data;// Спарсили данные запроса в переменную\r",
+							"let jsonData = pm.response.json(); //3. Спарсить response body в json.(То есть взяли данные в формате JSON из овета)\r",
+							"let req_age = reqData.age; // спарсили данные запроса (reqData) а конкретно значение age\r",
+							"let req_name = reqData.name; // спарсили данные запроса (reqData) а конкретно значение name\r",
 							"let req_salary = +(reqData.salary);\r",
 							"let req_salary_1_5 = +(reqData.salary * 4)\r",
 							"\r",
@@ -79,7 +79,7 @@
 							"pm.test(\"good req_salary 1.5\", function () {\r",
 							"    pm.expect(jsonData.salary * 4).to.eql(req_salary_1_5);\r",
 							"})\r",
-							"\r",
+							"console.log(jsonData.family) //11. Вывести в консоль параметр family из response. \r",
 							""
 						],
 						"type": "text/javascript"
@@ -134,8 +134,8 @@
 					"script": {
 						"exec": [
 							"//variables\r",
-							"var reqData = request.data;\r",
-							"var jsonData = pm.response.json();\r",
+							"var reqData = request.data; //4. Спарсить request.\r",
+							"var jsonData = pm.response.json(); //3. Спарсить response body в json.\r",
 							"let reqName = jsonData.name;\r",
 							"let reqAge = jsonData.age;\r",
 							"let reqSalary = jsonData.salary;\r",
@@ -159,7 +159,7 @@
 							"\r",
 							"//console log\r",
 							"console.log(respFamily)\r",
-							"console.log(respDogName)\r",
+							"\r",
 							"\r",
 							"\r",
 							""
