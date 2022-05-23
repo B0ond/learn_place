@@ -2,8 +2,7 @@
 	"info": {
 		"_postman_id": "af4e5c56-1f0c-4e6e-80c9-9e348d51a6c5",
 		"name": "Postman_HW_2",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "19993837"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
@@ -223,12 +222,28 @@
 					"script": {
 						"exec": [
 							"let respJson = pm.response.json();\r",
-							"let reqData = request.data;\r",
+							"let reqData = pm.request.url.query.toObject();\r",
 							"let reqName = reqData.name;\r",
 							"\r",
 							"pm.test(\"Status code is 200\", function() {\r",
 							"    pm.response.to.have.status(200);\r",
-							"})"
+							"})\r",
+							"pm.test(\"Name is ok\", function(){\r",
+							"    pm.expect(respJson.name).to.eql(reqData.name);\r",
+							"})\r",
+							"pm.test(\"Age is ok\", function() {\r",
+							"    pm.expect(respJson.age).to.eql(+reqData.age);\r",
+							"})\r",
+							"console.log(reqData)\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
+							"// console.log(respJson.name, typeof(respJson.name) + \" response messages\")\r",
+							"// console.log(reqData.name, typeof(reqData.name), \"request messages\")"
 						],
 						"type": "text/javascript"
 					}
