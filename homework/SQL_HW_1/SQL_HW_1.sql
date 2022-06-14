@@ -5,7 +5,7 @@ order by id;
 
 2. Вывести всех студентов в таблице
 
-select name from students;
+select students from students;
 
  3. Вывести только Id пользователей
  
